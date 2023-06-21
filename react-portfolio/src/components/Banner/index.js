@@ -9,7 +9,7 @@ export const Banner = () => {
   const [isDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta] = useState(300 - Math.random() * 100);
-  const toRotate = [ "I'm Oscar Medina Full Stack Web Developer!" ];
+  const toRotate = [ "I'm Oscar Medina a Full Stack Web Developer!" ];
   useEffect(() => {
     let ticker = setInterval(() => {
       tick();
@@ -34,7 +34,7 @@ export const Banner = () => {
               <div>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi!`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer"]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <p>I recently graduated from the University of Texas at Austin with a certificate in Full Stack Web Development. I have a background in business and marketing. I have skills in React, JavaScript, CSS, HTML, MYSQL, MONGODB, BootStrap, JQuery, SQL, NoSQL, Adobe Creative Suite, Foundation, Shopify, Squarespace, Node, Express, and Handlebars to name a few. In my free time I enjoy collecting funko pops, going to concerts, and watching movies.    </p>
               </div>
           </Col>
           <Col xs={12} md={6} xl={5}>

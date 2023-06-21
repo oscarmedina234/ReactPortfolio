@@ -1,60 +1,65 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { Container, Row, Col, Tab} from "react-bootstrap";
 import { ProjectCard } from "../ProjectCard/index";
-// import projImg1 from "../assets/img/project-img1.png";
-// import projImg2 from "../assets/img/project-img2.png";
-// import projImg3 from "../assets/img/project-img3.png";
-// import colorSharp2 from "../assets/img/color-sharp2.png";
+import projImg1 from "../../assets/Morty.png";
+import projImg2 from "../../assets/Groovehub.png";
+import projImg3 from "../../assets/GroovehubRemixed.png";
+import projImg4 from "../../assets/LoneStarSales.png";
+import projImg5 from "../../assets/SA3.png";
 import 'animate.css';
-import TrackVisibility from 'react-on-screen';
 import './style.css'
+
+const projects = [
+  {
+    title: "Morty's Book of Shwifty Ricktails",
+    description: "Design, Ideation & Development",
+    imgUrl: projImg1,
+    githubUrl: "https://github.com/MortyShwiftyRicktails/Morty-Book-of-Shwifty-Ricktails",
+    liveUrl: "https://sudo-apt-install.github.io/didactic/",
+  },
+  {
+    title: "GrooveHub",
+    description: "Design & Development",
+    imgUrl: projImg2,
+    liveUrl: "groovehub-2023.herokuapp.com",
+  },
+  {
+    title: "GrooveHub Remixed",
+    description: "Design & Development",
+    liveUrl: "https://groovehub-remixed-2f12da1632a2.herokuapp.com/",
+    imgUrl: projImg3,
+  },
+  {
+    title: "Lone Star Sales",
+    description: "Design & Development",
+    liveUrl: "lonestarsales.net",
+    imgUrl: projImg4,
+  },
+  {
+    title: "SA3 Curbside",
+    description: "Design & Development",
+    liveUrl: "sa3curbside.com",
+    imgUrl: projImg5,
+  },
+  {
+    title: "Business Startup",
+    description: "Design & Development",
+    // imgUrl: projImg3,
+  },
+];
 
 export const Projects = () => {
 
-  const projects = [
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      // imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      // imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      // imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      // imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      // imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      // imgUrl: projImg3,
-    },
-  ];
 
   return (
     <section className="project" id="project">
       <Container>
         <Row>
           <Col size={12}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+                <h2>Portfolio</h2>
+                <p>Here are some examples of projects I've worked on</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                  {/* <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
                       <Nav.Link eventKey="first">Tab 1</Nav.Link>
                     </Nav.Item>
@@ -64,32 +69,30 @@ export const Projects = () => {
                     <Nav.Item>
                       <Nav.Link eventKey="third">Tab 3</Nav.Link>
                     </Nav.Item>
-                  </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                  </Nav> */}
+                  <Tab.Content id="slideInUp">
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
-                          projects.map((project, index) => {
+                          projects.map((projects, index) => {
                             return (
                               <ProjectCard
                                 key={index}
-                                {...project}
+                                {...projects}
                                 />
                             )
                           })
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="second">
+                    {/* <Tab.Pane eventKey="second">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
+                    </Tab.Pane> */}
                   </Tab.Content>
                 </Tab.Container>
-              </div>}
-            </TrackVisibility>
           </Col>
         </Row>
       </Container>
