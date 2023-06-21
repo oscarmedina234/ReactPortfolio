@@ -1,6 +1,10 @@
 .banner {
     margin-top: 0;
-    padding: 260px 0 100px 0;
+    padding: 150px 0 150px 0;
+    background-image: url('../../assets/bannerBackground.svg');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
   }
   .banner .tagline {
     font-weight: 700;

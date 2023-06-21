@@ -36,7 +36,7 @@ nav.navbar {
   .social-icon a {
       width: 42px;
       height: 42px;
-      background: rgba(217, 217, 217, 0.1);
+      background: rgba(255, 255, 255, 0.5);
       display: inline-flex;
       border-radius: 50%;
       margin-right: 6px;
@@ -59,7 +59,7 @@ nav.navbar {
       transform: scale(1);
   }
   .social-icon a img {
-      width: 40%;
+      /* width: */
       z-index: 1;
       transition: 0.3s ease-in-out;
   }
