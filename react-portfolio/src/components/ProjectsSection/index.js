@@ -20,7 +20,7 @@ const projects = [
     title: "GrooveHub",
     description: "Design & Development",
     imgUrl: projImg2,
-    liveUrl: "groovehub-2023.herokuapp.com",
+    liveUrl: "https://groovehub-2023.herokuapp.com",
   },
   {
     title: "GrooveHub Remixed",
@@ -31,20 +31,20 @@ const projects = [
   {
     title: "Lone Star Sales",
     description: "Design & Development",
-    liveUrl: "lonestarsales.net",
+    liveUrl: "https://lonestarsales.net",
     imgUrl: projImg4,
   },
   {
     title: "SA3 Curbside",
     description: "Design & Development",
-    liveUrl: "sa3curbside.com",
+    liveUrl: "https://sa3curbside.com",
     imgUrl: projImg5,
   },
-  {
-    title: "Business Startup",
-    description: "Design & Development",
-    // imgUrl: projImg3,
-  },
+  // {
+  //   title: "Business Startup",
+  //   description: "Design & Development",
+  //   // imgUrl: projImg3,
+  // },
 ];
 
 export const Projects = () => {
