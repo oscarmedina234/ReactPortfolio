@@ -4,7 +4,7 @@ import { NavBar } from "./components/NavBar/index";
 import { Banner } from "./components/Banner/index";
 // import { Skills } from "./components/Skills/index";
 import { Projects } from "./components/ProjectsSection/index";
-import { Contact } from "./components/Contact/index";
+// import { Contact } from "./components/Contact/index";
 import { Footer } from "./components/Footer/index";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <Banner />
       {/* <Skills /> */}
       <Projects />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </div>
   );
